@@ -1,0 +1,361 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  
+  overflow-x: hidden;
+}
+
+
+/*----------- HEADER----------------- */
+
+ul {
+  display: block;
+  list-style-type: none;
+  background-color: #3A57AF;
+  padding: 10px;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  width: 60px;
+  display: block;
+  padding: 8px;
+  background-color: #3A57AF;
+  color:white;
+  text-decoration:none;
+  padding:20px;
+}
+
+li a:hover {
+	background-color: orange;
+}
+
+/* ----------- CRUD TABLE ------------- */
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:40px;
+}
+td, th {
+  border: 5px solid #dddddd;
+  text-align: left;
+  padding: 19px;
+}
+th {
+	background-color: white;
+	color:black;
+	padding: 18px;
+}
+tr {
+	background-color: #3A57AF;
+	color:white;
+}
+
+.fa {
+	margin: 7px;
+}
+
+.fas {
+	font-size: 25px;
+}
+
+.fa-edit:before {
+    content: "\f044";
+	font-size: 25px;
+	color: orange;
+}
+
+.fa-trash-alt:before {
+    content: "\f2ed";
+	font-size: 25px;
+	color: red;
+}
+
+.fas fa-eye::before {
+    content: "\f06e";
+	font-size: 35px;
+	color: pink;
+}
+
+i.fas.fa-user:before {
+  content: "\f007";
+  font-size: 20px;
+}
+
+/*----------- LOGIN----------------- */
+
+.login {
+  margin: 130px auto;
+  width: 343px; 
+  height: 340px; 
+  border-radius: 8px/7px; 
+  background-color: #ebebeb; 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  border: solid 1px #cbc9c9;
+}
+
+body,
+input,
+textarea,
+select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #4c4c4c;
+  margin-top: -10px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #4c4c4c;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 10px;
+}
+
+.login #icon {
+  display: inline-block;
+  width: 30px;
+  background-color: #3a57af;
+  padding: 8px 4px 8px 15px;
+  margin-left: 5px;
+  border-radius: 4px 0px 0px 4px;
+  color: white;
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 0px #cbc9c9;
+}
+
+/*----------- REGISTER ----------------- */
+
+.registration {
+  margin: 130px auto;
+  width: 400px; 
+  height: 680px; 
+  border-radius: 8px/7px; 
+  background-color: #ebebeb; 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  border: solid 1px #cbc9c9;
+}
+
+form{
+  margin: 0 30px;
+}
+
+input[type=text],input[type=password], input[type=submit] {
+  width: 200px; 
+  height: 39px; 
+  border-radius: 0px 446px 4px 0px/5px 5px 4px 4px; 
+  background-color: #fff; 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 1px #cbc9c9;
+  margin-left: -5px;
+  margin-top: 5px; 
+  padding-left: 10px;
+}
+
+form > input[type=file]:nth-child(16) {
+  padding-left: 15px;
+  padding-top: -20px;
+}
+
+input[type=password]{
+  margin-bottom: 15px;
+}
+input[type=password]{
+  margin-bottom: 15px;
+}
+
+.registration #icon {
+  display: inline-block;
+  width: 30px;
+  background-color: #3a57af;
+  padding: 8px 4px 8px 15px;
+  margin-left: 5px;
+  border-radius: 4px 0px 0px 4px;
+  color: white;
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 0px #cbc9c9;
+}
+
+.gender {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.accounttype{
+  margin-left: 8px;
+  margin-top: 20px;
+}
+
+a.button {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  padding: 6px 25px 0px 20px;
+  margin: 10px 8px 20px 0px;
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+  width: 50px; height: 27px; 
+  border-radius: 5px; 
+  background-color: #3a57af; 
+  box-shadow: 0 3px rgba(58,87,175,.75);
+  transition: all 0.1s linear 0s; 
+  top: 0px;
+  position: relative;
+}
+
+a.button:hover {
+  top: 3px;
+  background-color:#2e458b;
+  -webkit-box-shadow: none; 
+  -moz-box-shadow: none; 
+  box-shadow: none;
+}
+
+input[type=submit] {
+	background-color: #3A57AF;
+	color:white;
+  margin-top: 20px;
+	margin-left:35px;
+}  
+
+/* ADD DATA & EDIT DATA */
+
+.edit-contact #icon {
+  display: inline-block;
+  width: 30px;
+  background-color: #3a57af;
+  padding: 8px 4px 8px 15px;
+  margin-left: 5px;
+  border-radius: 4px 0px 0px 4px;
+  color: white;
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 0px #cbc9c9;
+}
+
+.edit-contact #icon {
+  display: inline-block;
+  width: 30px;
+  background-color: #3a57af;
+  padding: 8px 4px 8px 15px;
+  margin-left: 5px;
+  border-radius: 4px 0px 0px 4px;
+  color: white;
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 0px #cbc9c9;
+}
+
+.add #icon {
+  display: inline-block;
+  width: 30px;
+  background-color: #3a57af;
+  padding: 8px 4px 8px 15px;
+  margin-left: 5px;
+  border-radius: 4px 0px 0px 4px;
+  color: white;
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 0px #cbc9c9;
+}
+
+/* VIEW PROFILE */
+
+#view{
+  margin-left: 200px;
+  margin: 70px auto 120px;
+  background-color: #fff;
+  padding: 0 20px 20px;
+  border-radius: 6px;
+  text-align: center
+}
+
+#view h1 {
+  font-size: 35px;
+  font-weight: 900;
+  color: #333;
+}
+
+#view p {
+  line-height: 1.7;
+  font-size: 22px;
+}
+
+.img{
+  width: 200px; 
+  height: 200px; 
+ 
+}
+
+/* PROFILE */
+#profile {
+  padding-left: 90px;
+  padding-top: 60px;
+}
+#profile h1 {
+  font-size: 35px;
+  font-weight: 900;
+  color: #333;
+}
+
+#profile p {
+  line-height: 1.7;
+  font-size: 22px;
+}
+
+.social-icon {
+  width: 100%;
+}
+
+.social-icon i {
+  padding-top: 10px;
+  padding: 5px;
+}
+
+.social-icon i.fab.fa-facebook {
+  color: blue;
+  font-size: 45px;
+}
+.social-icon i.fab.fa-instagram {
+  color: #E1306C;
+  font-size: 45px;
+}
+.social-icon i.fab.fa-twitter-square {
+  color: #1DA1F2;
+  font-size: 45px;
+}
+.social-icon i.fab.fa-linkedin {
+  color: #0e76a8;
+  font-size: 45px;
+}
+.social-icon i.fab.fa-youtube {
+  color: #c4302b;
+  font-size: 45px;
+  padding-bottom: 22px;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  padding: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: #3A57AF;
+  color: white;
+  text-align: center;
+}
+
+
